@@ -3,6 +3,16 @@
     padding: 0;
 
 }
+html {
+    scroll-behavior: smooth;
+}
+body {
+   
+    overflow-x: hidden; /* Ocultar a barra de rolagem horizontal */
+   
+}
+
+
 
 :root{
     --primary-color: #edf2fc;
@@ -16,23 +26,16 @@
 
 #icon{
     width: 30px;
-    cursor: pointer;
-    transition: opacity 0.5 ease-in-out;
-}
-#Icon.fade-out {
-    opacity: 0;
+    cursor: pointer;    
 }
 
-#Icon.fade-in {
-    opacity: 1;
-}
 nav ul{
     flex: 1;
     text-align: right;
 }
 
 
-.hero{
+.home{
     height: 100vh;
     width: 100%;
     background: var(--primary-color);
@@ -109,7 +112,7 @@ span{
 .img-box:hover .back-img{
     bottom: 40px;
 }   
-.img-box:hover .sergio-img{
+.img-box:hover .programmer-img{
     left: 54%;
 }
 .social-links{
@@ -124,3 +127,75 @@ span{
 .social-links a:hover{
     color: #1294DD;
 }
+.about{ height: 100vh;
+    width: 100%;
+    background: var(--primary-color);
+    font-family: sans-serif;
+    position: relative;
+}
+.about h2{
+    font-size: 25px;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+    margin-left: 150px;
+}
+.about p{
+    color: var(--secondary-color);
+    line-height: 23px;
+    font-size: 18px;
+    margin-left: 150px;
+    margin-bottom: 20px;
+}
+
+section .header{
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 600;
+
+}
+.projetos{
+    margin-top: 1rem;
+    display: flex;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    text-align: center;
+}
+.projetos .card{
+    padding: 1rem;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+.projetos .card:hover{
+    border-color: #1294DD;
+}
+.projetos .card span{
+    display: inline-block;
+    background-color: #1294DD;
+    padding: 2px 9px;
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    color: #fff;
+    border-radius: 5px;
+
+}
+.projetos .card h4{
+    margin-bottom: 0.5rem;
+    color: #1294DD;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.projetos .card p{
+    margin-bottom: 1.5rem;
+    text-align: center;
+    line-height: 1; /* Ajusta o espaçamento entre linhas */
+}
+.projetos .card a{
+    color: var(--secondary-color);
+    transition: all 0.3s ease;
+}
+.projetos .card a:hover{
+    color: #1294DD;
+}
+
